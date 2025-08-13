@@ -25,15 +25,47 @@ Just me learning and experimenting with Docker — containerizing different kind
 - Optimizing builds to make images smaller & faster.
 - Understanding volumes, ports, and networks in Docker.
 
-##For the MERN stack:
-
-cd mern-docker
-docker-compose up --build
-
-
 ## 🚀 How to Run
-Example for `hello-docker`:
+
+### For `hello-docker`
 ```bash
 cd hello-docker
 docker build -t hello-docker .
 docker run -p 3000:3000 hello-docker
+```
+
+### For `react-docker`
+```bash
+cd react-docker
+docker build -t react-docker .
+docker run -p 3000:3000 react-docker
+```
+
+### For `next-docker`
+```bash
+cd next-docker
+docker build -t next-docker .
+docker run -p 3000:3000 next-docker
+```
+
+### For `vite-project`
+```bash
+cd vite-project
+docker build -t vite-docker .
+docker run -p 5173:5173 vite-docker
+```
+
+### For the `mern-docker` stack
+```bash
+cd mern-docker
+docker-compose up --build
+```
+
+## 📅 Next Steps
+- Push these images to **Docker Hub**.
+- Try deploying a Dockerized app to the cloud.
+- Automate builds using **GitHub Actions** or other CI/CD tools.
+
+---
+
+💬 *Feel free to fork, try them out, or drop me suggestions!*
